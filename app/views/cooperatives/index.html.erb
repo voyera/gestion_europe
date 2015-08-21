@@ -1,0 +1,17 @@
+<h2>Cooperative(s)</h2>
+
+<%= link_to 'New Cooperative', new_cooperative_path, class: "btn btn-primary", role: "button" %>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th class="col-md-3">Name</th>
+      <th class="col-md-3">Short Name</th>
+      <th class="col-md-3">Organism</th>
+      <th class="col-md-3" colspan="3">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @cooperatives %>
+  </tbody>
+</table>
