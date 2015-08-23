@@ -1,0 +1,10 @@
+<tr>
+  <td>check_box</td>
+  <td><%= unit.name %></td>
+  <td><%= unit.owner %></td>
+  <td><%= unit.account %></td>
+  <td><%= unit.amount %></td>
+  <td><%= link_to 'Show', unit %></td>
+  <td><%= link_to 'Edit', edit_unit_path(unit) %></td>
+  <td><%= link_to('Destroy', unit_path(unit), method: :delete , data: { confirm: 'Are you sure?' }) %></td>
+</tr>

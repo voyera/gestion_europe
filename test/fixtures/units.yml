@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  belongs_to: 
+  name: MyString
+  owner: MyString
+  account: MyString
+  amount: MyString
+
+two:
+  belongs_to: 
+  name: MyString
+  owner: MyString
+  account: MyString
+  amount: MyString
