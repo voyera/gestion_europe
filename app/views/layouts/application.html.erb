@@ -40,8 +40,11 @@
       </div><!--/.container-fluid -->
     </nav>
     
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <% flash.each do |message_type, message| %>
+      <% unless message_type == 'timeout' #dismiss devise's timeout messages %>
+      <div class="alert alert-<%= message_type %>" role="alert"><%= message %></div>
+      <% end %>
+    <% end %>
     
     <%= yield %>
     

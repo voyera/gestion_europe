@@ -5,3 +5,20 @@
 </p>
 
 <h1>Units</h1>
+
+<%= link_to 'New Unit', new_cooperative_unit_path(@cooperative), class: "btn btn-primary", role: "button" %>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th class="col-md-2">Name</th>
+      <th class="col-md-3">Owner</th>
+      <th class="col-md-2">Account</th>
+      <th class="col-md-2">Amount</th>
+      <th class="col-md-3" colspan="3">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @cooperative.units %>
+  </tbody>
+</table>
